@@ -215,7 +215,7 @@ champ.BMIQ <- function(beta.v, design.v, nL = 3, doH = TRUE, nfit = 10000,
 }
 
 # Load probe information from an RDS file
-probeInfoALL.lv <- readRDS("./probe_info_450k.rds")
+probeInfoALL.lv <- data(probeInfoALL.lv)
 
 # Create a design vector based on probe information and the row names of beta_train_filter
 design.v <- as.numeric(lapply(probeInfoALL.lv, function(x) x)$Design[match(rownames(beta_train_filter), probeInfoALL.lv$probeID)])
