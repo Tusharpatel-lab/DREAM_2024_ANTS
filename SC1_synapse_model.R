@@ -271,9 +271,10 @@ model <- cv.glmnet(x = as.matrix(t(subset_beta_train_mat)), y = log(ano$GA), nfo
 
 # Save the trained model and other relevant data to files
 saveRDS(model, "./model_test_SC1.rds")
-saveRDS(first_filter, "./first_filter.rds")
-saveRDS(second_filter, "./second_filter.rds")
-saveRDS(cluster_info, "./cluster_info.rds")
+saveRDS(first_filter, "./first_filter_SC1.rds")
+saveRDS(second_filter, "./second_filter_SC1.rds")
+saveRDS(cluster_info, "./cluster_info_SC1.rds")
 
 # Clean up the workspace
 rm(list = ls())
+
