@@ -269,5 +269,5 @@ model <- cv.glmnet(x = as.matrix(t(beta_norm_BMIQ)), y = log(ano$GA), nfolds = 3
 
 # Save the trained model and other relevant data to files
 saveRDS(model, "/misc/pichu/data/DREAM_24/Submission/SC2_v1.3/model_test_SC2.rds")
-saveRDS(first_filter, "/misc/pichu/data/DREAM_24/Submission/SC2_v1.3/first_filter.rds")
-saveRDS(second_filter, "/misc/pichu/data/DREAM_24/Submission/SC2_v1.3/second_filter.rds")
+saveRDS(first_filter, "/misc/pichu/data/DREAM_24/Submission/SC2_v1.3/first_filter_SC2.rds")
+saveRDS(second_filter, "/misc/pichu/data/DREAM_24/Submission/SC2_v1.3/second_filter_SC2.rds")
