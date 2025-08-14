@@ -34,7 +34,7 @@ test_data <- test_data[,-1]
 Sample_IDs <- colnames(test_data)
 
 # Quality control - champ.filter
-first_filter <- readRDS("/usr/local/bin/first_filter.rds")
+first_filter <- readRDS("/usr/local/bin/first_filter_SC2.rds")
 
 # Subset the raw data based on the first filter
 test_data_subset <- test_data[first_filter, ]
@@ -176,7 +176,7 @@ rownames(test_data_subset_norm) <- rownames(test_data_subset)
 colnames(test_data_subset_norm) <- colnames(test_data_subset)
 
 # Correlation filter
-second_filter <- readRDS("/usr/local/bin/second_filter.rds")
+second_filter <- readRDS("/usr/local/bin/second_filter_SC2.rds")
 
 # Subset the normalized data based on the second filter
 test_data_subset_norm <- test_data_subset_norm[second_filter,]
