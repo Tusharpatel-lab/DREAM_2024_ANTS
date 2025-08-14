@@ -20,7 +20,7 @@ test_data <- test_data[,-1]
 Sample_IDs <- colnames(test_data)
 
 # Quality control - champ.filter
-first_filter <- readRDS("./first_filter.rds")
+first_filter <- readRDS("./first_filter_SC1.rds")
 
 # Subset the raw data based on the first filter
 test_data_subset <- test_data[first_filter, ]
@@ -162,13 +162,13 @@ rownames(test_data_subset_norm) <- rownames(test_data_subset)
 colnames(test_data_subset_norm) <- colnames(test_data_subset)
 
 # Correlation filter
-second_filter <- readRDS("./second_filter.rds")
+second_filter <- readRDS("./second_filter_SC1.rds")
 
 # Subset the normalized data based on the second filter
 test_data_subset_norm <- test_data_subset_norm[second_filter,]
 
 # Clustering information to cluster the filtered normalized data
-cluster_info <- readRDS("./cluster_info.rds")
+cluster_info <- readRDS("./cluster_info_SC1.rds")
 
 # Function for feature selection/engineering using k-means clustering
 # Steps : Perform k-means clustering, Combine cluster information with subset data, Calculate median values for each cluster, Extract cluster information
