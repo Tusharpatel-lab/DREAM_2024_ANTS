@@ -1,6 +1,6 @@
 # DREAM_2024_ANTS
 
-Source code for the Placental Methylation Clock – DREAM 2024 Challenge
+Source code for the Placental Methylation Clock – DREAM 2024 Challenge. Wiki: https://www.synapse.org/Synapse:syn61846522/wiki/629109
 
 This repository contains R scripts used to develop and run the final models for the DREAM 2024 placental methylation clock challenge.
 
