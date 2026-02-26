@@ -6,7 +6,7 @@ This repository contains R scripts used to develop and run the final models for 
 
     SC1_synapse_model.R – Final model for the SC1 sub-challenge, incorporating correlation-based feature selection and k-means-based feature clustering.
 
-    Run_SC1_synapse_model.R – Runs the SC1 model on a new dataset for gestational age prediction.
+    Model_placental_clock.R – Runs the SC1 model on a new dataset for gestational age prediction.
 
     SC2_paper_model.R – Final model for the SC2 sub-challenge, incorporating correlation-based and EWAS-based feature selection.
 
